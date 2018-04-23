@@ -33,6 +33,7 @@ import xdean.annotation.processor.toolkit.annotation.SupportedAnnotation;
 @SupportedAnnotation(AutoSpringFactories.class)
 public class AutoSpringFactoriesProcessor extends XAbstractProcessor {
 
+  public static final String META_INF_SPRING_FACTORIES = "META-INF/spring.factories";
   private Map<String, List<String>> map = new HashMap<>();
 
   @Override
@@ -63,7 +64,7 @@ public class AutoSpringFactoriesProcessor extends XAbstractProcessor {
   }
 
   private void generateFile() throws IOException {
-    FileObject resource = filer.createResource(StandardLocation.CLASS_OUTPUT, "", "META-INF/spring.factories");
+    FileObject resource = filer.createResource(StandardLocation.CLASS_OUTPUT, "", META_INF_SPRING_FACTORIES);
     OutputStream output = resource.openOutputStream();
     PrintStream writer = new PrintStream(output, false, StandardCharsets.UTF_8.name());
     map.forEach((k, v) -> {
