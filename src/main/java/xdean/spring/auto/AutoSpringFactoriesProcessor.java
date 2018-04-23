@@ -75,4 +75,8 @@ public class AutoSpringFactoriesProcessor extends XAbstractProcessor {
     writer.flush();
     writer.close();
   }
+
+  protected <T> Assert<T> assertThat(T t, boolean b) {
+    return new Assert<>(t, b);
+  }
 }
