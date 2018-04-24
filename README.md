@@ -1,4 +1,6 @@
 # Auto `spring.factories`
+[![Build Status](https://travis-ci.org/XDean/auto-spring-factories.svg?branch=master)](https://travis-ci.org/XDean/auto-spring-factories)
+[![codecov.io](http://codecov.io/github/XDean/auto-spring-factories/coverage.svg?branch=master)](https://codecov.io/gh/XDean/auto-spring-factories/branch/master)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.XDean/auto-spring-factories/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.XDean/auto-spring-factories)
 
 Auto generate `spring.factories` in type-safe way.
