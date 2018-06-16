@@ -16,10 +16,10 @@ import com.google.common.io.CharStreams;
 import com.google.testing.compile.Compilation;
 
 import xdean.annotation.processor.toolkit.CommonUtil;
-import xdean.annotation.processor.toolkit.test.CompileTest;
-import xdean.annotation.processor.toolkit.test.Compiled;
+import xdean.test.compile.CompileTestCase;
+import xdean.test.compile.Compiled;
 
-public class AutoSpringFactoriesTest extends CompileTest {
+public class AutoSpringFactoriesTest extends CompileTestCase {
   @Test
   @Compiled(
       processors = AutoSpringFactoriesProcessor.class,

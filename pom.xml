@@ -5,21 +5,21 @@
 	<parent>
 		<groupId>com.github.XDean</groupId>
 		<artifactId>oss-parent</artifactId>
-		<version>1.0</version>
+		<version>1.1</version>
 	</parent>
 	<artifactId>auto-spring-factories</artifactId>
-	<version>0.1.1</version>
+	<version>0.1.2</version>
 	<packaging>jar</packaging>
 	<name>Auto spring.factories</name>
 	<description>Auto Generate spring.factories</description>
-	<url>${repository.url}</url>
+	<url>https://github.com/XDean/auto-spring-factories</url>
 
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>com.github.XDean</groupId>
-				<artifactId>deannotation-parent</artifactId>
-				<version>0.2.4</version>
+				<artifactId>dependency-parent</artifactId>
+				<version>1.1</version>
 				<scope>import</scope>
 				<type>pom</type>
 			</dependency>
@@ -42,7 +42,7 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>com.google.testing.compile</groupId>
+			<groupId>com.github.XDean</groupId>
 			<artifactId>compile-testing</artifactId>
 			<scope>test</scope>
 		</dependency>
@@ -54,7 +54,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-autoconfigure</artifactId>
-			<version>2.0.0.RELEASE</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
