@@ -1,8 +1,6 @@
 package xdean.spring.auto;
 
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-
-@AutoSpringFactories(EnableAutoConfiguration.class)
+@AutoSpringFactories(TestAutoConfig.class)
 public class TestAutoConfig {
 
 }

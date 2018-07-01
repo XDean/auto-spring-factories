@@ -10,8 +10,6 @@ import java.nio.file.Paths;
 
 import javax.tools.StandardLocation;
 
-import org.junit.Test;
-
 import com.google.common.io.CharStreams;
 import com.google.testing.compile.Compilation;
 
@@ -20,7 +18,6 @@ import xdean.test.compile.CompileTestCase;
 import xdean.test.compile.Compiled;
 
 public class AutoSpringFactoriesTest extends CompileTestCase {
-  @Test
   @Compiled(
       processors = AutoSpringFactoriesProcessor.class,
       sources = {
