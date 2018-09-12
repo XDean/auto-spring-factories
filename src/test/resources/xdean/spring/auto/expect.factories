@@ -1,3 +1,4 @@
-xdean.spring.auto.TestAutoConfig=\
-xdean.spring.auto.TestAutoConfig
+java.lang.Integer=\
+xdean.spring.auto.TestAutoConfig,\
+xdean.spring.auto.TestAutoConfig2
 
