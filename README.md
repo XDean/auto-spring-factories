@@ -11,7 +11,7 @@ Auto generate `spring.factories` in type-safe way.
 <dependency>
     <groupId>com.github.XDean</groupId>
     <artifactId>auto-spring-factories</artifactId>
-    <version>x.x</version>
+    <version>0.1.2</version>
     <scope>provided</scope>
 </dependency>
 ```
@@ -39,5 +39,4 @@ It will auto generate `spring.factories`.
 
 # Notice
 
-- Don't manually add `spring.factories` if use this tool.
-- Only support top-level class now.
+- Only support top-level class
